@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Klick erfasst!</title></head>
+<body>
+  <script>
+    fetch("https://api.github.com/repos/Kinan122/klick-tracker/dispatches", {
+      method: "POST",
+      headers: {
+        "Accept": "application/vnd.github.everest-preview+json",
+        "Authorization": "Bearer DEIN_TOKEN"
+      },
+      body: JSON.stringify({ event_type: "log-klick" })
+    });
+  </script>
+  <h1>Danke fürs Vorbeischauen 😄</h1>
+</body>
+</html>
