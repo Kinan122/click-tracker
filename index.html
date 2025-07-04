@@ -7,7 +7,7 @@
       method: "POST",
       headers: {
         "Accept": "application/vnd.github.everest-preview+json",
-        "Authorization": "Bearer {{ secrets.GH_TOKEN }}"
+        // Wichtig: Kein Authorization-Header hier!
       },
       body: JSON.stringify({ event_type: "log-klick" })
     });
