@@ -3,6 +3,7 @@ name: Klick loggen
 on:
   repository_dispatch:
     types: [log-klick]
+  workflow_dispatch:  # 👉 Damit du den Button "Run workflow" bekommst
 
 jobs:
   log:
